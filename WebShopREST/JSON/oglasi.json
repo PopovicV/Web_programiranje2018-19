@@ -1,0 +1,113 @@
+{
+	"xiaomiSat" : {
+	
+		"naziv": "Xiaomi Mi Band 4",
+		"cena": "5500",
+		"opis": "Zelite da vidite koliko vam brzo kuca srce dok kasnite sa projektom? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Pametni uređaji",
+		"brojLajkova": 254,
+		"brojDislajkova" : 5,
+		"slika" : "images/miband4.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+
+	"mnogoKafe" : {
+	
+		"naziv": "Grand Kafa 500g",
+		"cena": "859",
+		"opis": "Zelite da nastavite svoj niz neprospavanih noci zbog projekta? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Za studente",
+		"brojLajkova": 252,
+		"brojDislajkova" : 12,
+		"slika" : "images/grandkafa.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+
+	"ogledalo" : {
+	
+		"naziv": "Ogledalo nade",
+		"cena": "3699",
+		"opis": "Zelite da vidite kako izgledate posle uradjenog projekta(LOL)? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Za studente",
+		"brojLajkova": 162,
+		"brojDislajkova" : 16,
+		"slika" : "images/ogledalo.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+	
+	"maramice" : {
+	
+		"naziv": "Maramice 100/1",
+		"cena": "199",
+		"opis": "Lijete litru suza za svaku hiljadu koju dajete za budzet jer projekat nije uspeo? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Za studente",
+		"brojLajkova": 161,
+		"brojDislajkova" : 12,
+		"slika" : "images/maramice.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+	
+	"lekovi" : {
+	
+		"naziv": "Bensendin 10mg 20/1",
+		"cena": "359",
+		"opis": "Me too, me too...",
+		"nazivKategorije" : "Za studente",
+		"brojLajkova": 132,
+		"brojDislajkova" : 12,
+		"slika" : "images/bensedin.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+"xiaomiSat1" : {
+	
+		"naziv": "Xiaomi Mi Band 4",
+		"cena": "5500",
+		"opis": "Zelite da vidite koliko vam brzo kuca srce dok kasnite sa projektom? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Pametni uređaji",
+		"brojLajkova": 103,
+		"brojDislajkova" : 5,
+		"slika" : "images/miband4.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+},
+"xiaomiSat2" : {
+	
+		"naziv": "Xiaomi Mi Band 4",
+		"cena": "5500",
+		"opis": "Zelite da vidite koliko vam brzo kuca srce dok kasnite sa projektom? Look no further, ovo je pravi proizvod za vas.",
+		"nazivKategorije" : "Pametni uređaji",
+		"brojLajkova": 5,
+		"brojDislajkova" : 2,
+		"slika" : "images/miband4.jpg",
+		"datumPostavljanja" : "03.09.2019",
+		"datumIsticanja" : "03.12.2019",
+		"aktivan" : "AKTIVAN",
+		"listaRecenzija": [ ],
+		"grad" : "Novi Sad"
+}
+
+
+}

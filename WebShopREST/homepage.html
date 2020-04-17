@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/main_styles.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/single_responsive.css">
+<link rel="stylesheet" type="text/css" href="css/single_styles.css">
+
+<!-- <link href="css/navigationbar.css" type="text/css" rel="stylesheet"> -->
+
+
+
+	
+<title>Web Shop</title>
+</head>
+<body>
+
+<div class="super-container">
+<!-- NAVIGATION BAR -->
+
+<!--Navbar -->
+
+<nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <a class="navbar-brand" href="kupac.html">Web<b>Shop</b></a> 
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Početna</a>
+            </li>
+            <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Kategorije</a>
+            <div id="kategorijeMeni" class="dropdown-menu sm-menu">
+              
+            </div>
+          </li>
+          </ul>
+          <div class="social-part">
+           	<ul style="float:right" class="nav navbar-nav navbar-right">
+      			<li><a style="padding-right:20px" href="" data-toggle="modal" data-target="#modalRegisterForm"><span class="fa fa-user-plus"></span> Registracija</a></li>
+     			<li><a style="padding-right:20px" href="" data-toggle="modal" data-target="#modalLoginForm"><span class="fa fa-sign-in"></span> Prijavi se</a></li>
+    		</ul>
+          </div>
+        </div>
+      </nav>
+
+<!--/.Navbar -->
+
+<!-- LOGIN MODALNA FORMA -->
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+	<div class="modal-dialog" role="document">
+   		<div class="modal-content">
+    		<div class="modal-header text-center">
+      	  		<h4 style="font-family: 'Varela Round', sans-serif;" class="modal-title w-100 font-weight-bold">Uloguj se</h4>
+     	  			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      	    		<span aria-hidden="true">&times;</span>
+      	  			</button>
+     	 	</div>
+     	 		<div class="modal-body mx-3">
+        		
+        		<form id="loginForma">
+       	 			<div class="md-form mb-5">
+       	 				<label>Korisničko ime</label>
+       		 			<input  type="text" id="username" class="form-control">
+       		 			<label id='korisnickoImeValidacija' style="color:red; visibility:hidden; display:none">Korisničko ime ne sme biti prazno</label>
+       	 			</div>
+
+        			<div class="md-form mb-4">
+        				<label>Lozinka</label>
+        				<input type="password" id="password" class="form-control">
+        				<label id='lozinkaValidacija' style="color:red; visibility:hidden; display:none">Lozinka ne sme biti prazna</label>
+       		 		</div>
+       		 		
+     	 			<div style="text-align:center;" class="modal-footer d-flex justify-content-center">
+        				<button style="text-align:center;" class="btn btn-primary">Uloguj se</button>
+        				<label id='sveukupnaValidacija' style="color:red; visibility:hidden; display:none">Pogrešno korisničko ime ili šifra</label>
+      				</div>
+				</form>
+				</div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- REGISTER MODALNA FORMA -->
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Registracija</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body mx-3">
+      <form id="registerForma">
+      
+        <div class="md-form mb-5">
+        	<label>Korisničko ime</label>
+          <input type="text" id="regUserName" class="form-control">
+        </div>
+        
+        <div class="md-form mb-5">
+        	<label>Lozinka</label>
+          <input type="password" id="regPassword" class="form-control">
+        </div>
+
+        <div class="md-form mb-4">
+        	<label>Ponovite lozinku</label>
+          	<input type="password" id="regPasswordRepeat" class="form-control">
+          	<label id="regPasswordRepeatValidation" style="color:red; display:none; visibility:hidden">Lozinke se ne poklapaju</label>
+        </div>
+        
+        <div class="md-form mb-4">
+        	<label>Ime</label>
+          <input type="text" id="regName" class="form-control">
+        </div>
+        
+        <div class="md-form mb-4">
+        	<label>Prezime</label>
+          <input type="text" id="regSurname" class="form-control">
+        </div>
+        
+        <div class="md-form mb-4">
+        	<label>Kontakt telefon</label>
+          <input type="text" id="regTelephone" class="form-control">
+        </div>
+        
+        <div class="md-form mb-4">
+        	<label>Grad</label>
+          	<input type="text" id="regCity" class="form-control">
+        </div>
+        
+        <div class="md-form mb-4">
+          	<label>E-mail adresa</label>
+          	<input type="email" id="regMail" class="form-control">
+          	<label id="regMailValidation" style="color:red; display:none; visibility:hidden">Neispravan format email adrese</label>
+        </div>
+        
+
+      
+      <div style="text-align:center" class="modal-footer d-flex justify-content-center">
+        <button style="text-align:center;" class="btn btn-primary">Registruj se</button>
+        <label id="regValidation" style="display:none; visibility:hidden; color:red">Molimo Vas popunite sva obavezna polja</label>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- BEST SELLERS CONTENT -->
+<div class="best_sellers">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title new_arrivals_title">
+						<h2>Najpopularniji proizvodi</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="product_slider_container">
+						<div class="owl-carousel owl-theme product_slider">
+								<!-- Slide 1 -->
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								<!-- Slide 2 -->
+	
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								<!-- Slide 3 -->
+	
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								
+						</div>
+						
+						<!-- Slider Navigation -->
+
+						<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<span style="width:4%" class="fa fa-chevron-left" aria-hidden="true"></span>
+						</div>
+						<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<span style="width:4%" class="fa fa-chevron-right" aria-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- MODAL PRODUCT CONTENT -->
+
+<div class="modal fade" id="modalProductContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+	<div class="modal-dialog" role="document">
+   		<div class="modal-content">
+    		<div class="modal-header text-center">
+      	  		
+     	  			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      	    		<span aria-hidden="true">&times;</span>
+      	  			</button>
+     	 	</div>
+     	 	
+     	 	<div id="dugmeClose" class="row">
+			<div class="col-lg-7">
+				<div class="single_product_pics">
+					
+							<div style="margin-bottom: 100px; margin-top: 50px; margin-right: 50px;"class="single_product_image">
+								<div class="single_product_image_background" style="background-image:url(images/a.jpg); background-size: contain"></div>
+							</div>
+						
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="product_details">
+					<div class="product_details_title">
+						<h4>Pocket cotton sweatshirt</h4>
+						<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
+					</div>
+					<div class="product_price">$495.00</div>
+					<div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
+						<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+						<div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+     	 		
+
+    </div>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/zalogin.js"></script>
+<script src="js/zaregister.js"></script>
+
+<script src="js/popper.js"></script>
+
+
+<script src="js/top.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="js/single_custom.js"></script>
+<script src="js/homepageKategorije.js"></script>
+
+
+
+</body>
+</html>

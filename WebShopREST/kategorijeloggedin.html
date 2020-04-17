@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+<link rel="stylesheet" type="text/css" href="css/categories_styles.css">
+<link rel="stylesheet" type="text/css" href="css/categories_responsive.css">
+<link rel="stylesheet" type="text/css" href="css/single_responsive.css">
+<link rel="stylesheet" type="text/css" href="css/single_styles.css">
+	
+<title>Web Shop</title>
+</head>
+<body>
+
+<div class="super-container">
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <a class="navbar-brand" href="homepage.html">Web<b>Shop</b></a> 
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Početna</a>
+            </li>
+            <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Kategorije</a>
+            <div id="kategorijeMeni" class="dropdown-menu sm-menu">
+              
+            </div>
+          </li>
+          </ul>
+          <div class="social-part">
+           	<ul style="float:right" class="nav navbar-nav navbar-right">
+				<li class="nav-item" id="odjavaID" ><a class="nav-link" id="logoutklik" href=""><span class="fa fa-sign-out nav-item"></span> Odjavi se</a></li>
+    		</ul>
+          </div>
+        </div>
+      </nav>
+
+	<!-- CATEGORY MAIN CONTENT -->	
+	
+	<div class="container product_section_container">
+		<div class="row">
+			<div class="col product_section clearfix">
+
+				<!-- Sidebar -->
+
+				<div class="sidebar">
+					<div class="sidebar_section">
+						<div class="sidebar_title">
+							<h5>Kategorije</h5>
+						</div>
+						<ul id="sidebarKategorije" class="sidebar_categories">
+						
+						</ul>
+					</div>
+
+					<!-- Price Range Filtering -->
+					<div class="sidebar_section">
+						<div class="sidebar_title">
+							<h5>Filtriranje</h5>
+						</div>
+						<p>Po nazivu</p>
+						<input type="text" id="filterNaziv">
+						<br>
+						<p>Po ceni</p>
+						<p>
+							<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						</p>
+						<br>
+						<div id="slider-range"></div>
+						<br>
+						<p>Po lajkovima</p>
+						<p>
+							<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						</p>
+						<div id="slider-range1"></div>
+						<br>
+						<input type="checkbox" name="vehicle1" value="Aktivan"> Aktivan<br>
+						<input type="checkbox" name="vehicle1" value="U realizaciji"> U realizaciji<br>
+						<input type="checkbox" name="vehicle1" value="Dostavljen"> Dostavljen<br>
+						<br>
+						<div id="gradovi">
+						</div>
+						<div class="filter_button"><span>Filtriraj</span></div>
+					</div>
+
+
+				</div>
+
+				<!-- Main Content -->
+
+				<div class="main_content">
+
+					<!-- Products -->
+
+					<div class="products_iso">
+						<div id="gridZaProizvode" class="row">
+							<div class="col">
+
+								<!-- Product Sorting -->
+
+								<!-- Product Grid -->
+
+								<div  class="product-grid">
+
+									<!-- Product 1 -->
+
+									<div class="product-item">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+									</div>
+									
+									<div class="product-item">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+									</div>
+									
+									<div class="product-item">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+									</div>
+									
+									<div class="product-item">
+										<div class="product product_filter">
+											<div class="product_image">
+												<img alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html"></a></h6>
+												<div class="product_price"></div>
+											</div>
+										</div>
+										<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+									</div>
+
+
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="modalProductContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+	<div class="modal-dialog" role="document">
+   		<div class="modal-content">
+    		<div class="modal-header text-center">
+      	  		
+     	  			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      	    		<span aria-hidden="true">&times;</span>
+      	  			</button>
+     	 	</div>
+     	 	
+     	 	<div id="dugmeClose" class="row">
+			<div class="col-lg-7">
+				<div class="single_product_pics">
+					
+							<div style="margin-bottom: 100px; margin-top: 50px; margin-right: 50px;"class="single_product_image">
+								<div class="single_product_image_background" style="background-image:url(images/a.jpg); background-size: contain"></div>
+							</div>
+						
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="product_details">
+					<div class="product_details_title">
+						<h4>Pocket cotton sweatshirt</h4>
+						<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
+					</div>
+					<div class="product_price">$495.00</div>
+					<div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
+						<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+						<div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+     	 		
+
+    </div>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/categories_custom.js"></script>
+<script src="js/loggedin.js"></script>
+<script src="js/kupi.js"></script>
+
+<script src="js/kategorije2.js"></script>
+<script src="js/single_custom.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+	"Pametni uređaji" : {
+	
+		"naziv": "Pametni uređaji",
+		"opis": "Kategorija sadrži mobilne telefone, pametne satove itd.",
+		"listaOglasa" : [ ]
+},
+
+	"Za studente" : {
+	
+		"naziv": "Za studente",
+		"opis": "Kategorija sadrži proizvode koji su potrebni jednom prosečnom studentu.",
+		"listaOglasa" : [ ]
+},
+
+	"A za testiranje" : {
+	
+		"naziv": "A za testiranje",
+		"opis": "Kategorija sadrži proizvode koji su potrebni jednom prosečnom studentu.",
+		"listaOglasa" : [ ]
+}
+}
